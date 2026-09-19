@@ -19,7 +19,7 @@ setCodeHandler(() => new Promise((resolve) => {
   const done = (v) => { m.close(); resolve(v); };
   $('#ok', m.el).onclick = () => done($('#code', m.el).value.trim());
   $('#no', m.el).onclick = () => done(null);
-  $('#code', m.el).onkeydown = (e) => e.key === 'Enter' && done(e.target.value.trim());
+  $('#code', m.el).onkeydown = (e) => { if (e.key === 'Enter') done(e.target.value.trim()); };
   $('#code', m.el).focus();
 }));
 
