@@ -2,6 +2,12 @@
 
 Webes nyelvtanuló app magyar anyanyelvűeknek, 16 célnyelvvel. Felhasználónévvel lehet belépni, a böngésző megjegyzi a haladást. Az elején egy adaptív szintfelmérő van (CEFR A1–C2), a leckék erre a szintre épülnek.
 
+## Képernyőképek
+
+![Főképernyő](docs/fokepernyo.png)
+
+![Írásjavítás](docs/iras-javitas.png)
+
 ## Funkciók
 - **Szintfelmérő:** 10 lépcsőzetes kérdés és egy írásminta. A Gemini értékeli, és részkészség-profilt ad.
 - **Napi intenzív kör:** szókártya-ismétlés, új lecke, élő beszélgetés.
@@ -52,7 +58,7 @@ Külső összetevők (nem részei a repónak, futás közben töltődnek be):
 | Összetevő | Felhasználás | Licenc |
 |---|---|---|
 | [@google/genai](https://github.com/googleapis/js-genai), esm.sh CDN-ről | Gemini Live kapcsolat | Apache-2.0 |
-| [Gemini API](https://ai.google.dev/gemini-api/terms) és beépített hangjai | szöveg, hang, beszéd, fordítás, kép | Google Gemini API Terms of Service |
+| [Gemini API](https://ai.google.dev/gemini-api/terms) és beépített hangjai | szöveg, hang, beszéd, fordítás | Google Gemini API Terms of Service |
 | [Inter](https://fonts.google.com/specimen/Inter), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (Google Fonts) | betűtípusok | SIL Open Font License 1.1 |
 
 A mikrofon- és hangkezelés a szerző Myra és Puki projektjeiben kidolgozott megoldást követi.
